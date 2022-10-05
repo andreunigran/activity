@@ -1,5 +1,10 @@
 package br.unigran.hello;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.ActivityResultRegistry;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,15 +23,19 @@ public class MainActivity extends AppCompatActivity {
     public void next(View view){
         Intent it = new Intent(this,SegundaActivity.class);
         it.putExtra("Nome","André");
-        startActivityForResult(it,50);
+        resultLauncher.launch(it);
     }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode,
-                                    @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==50 && resultCode==80){
-            Toast.makeText(getApplicationContext(),"recebi",
-                            Toast.LENGTH_SHORT).show();
-        }
-    }
+    ActivityResultLauncher resultLauncher =
+            registerForActivityResult(
+                    new ActivityResultContracts.StartActivityForResult(),
+                    new ActivityResultCallback<ActivityResult>(){
+                        @Override
+                        public void onActivityResult(ActivityResult result) {
+                           if(result.getResultCode()==80)
+                            Toast.makeText(getApplicationContext(),
+                                    "retorno",Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+
 }
