@@ -12,6 +12,7 @@ public class SegundaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda);
         getIntent().getStringExtra("Nome");
+        setResult(80);
 
     }
 }
