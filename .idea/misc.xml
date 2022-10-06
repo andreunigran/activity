@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/andre/AndroidStudioProjects/Hello/app/src/main/res/layout/activity_main.xml" value="0.75" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/Hello/app/src/main/res/layout/activity_segunda.xml" value="0.33" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Hello/app/src/main/res/layout/fragment_primeiro.xml" value="0.25" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Hello/app/src/main/res/layout/fragment_segundo.xml" value="0.2" />
       </map>
     </option>
   </component>
