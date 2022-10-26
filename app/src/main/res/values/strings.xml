@@ -2,4 +2,14 @@
     <string name="app_name">Hello</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fornecedor">Fornecedor</string>
+    <string name="cliente">Cliente</string>
+    <string name="produto">Produto</string>
+    <string name="sair">Sair</string>
+    <string name="listar">Listar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="entre_com_o_nome">Entre com o nome</string>
+    <string name="entre_com_o_credito">Entre com o credito</string>
+    <string name="entre_com_a_data_de_nascimento">Entre com a Data de Nascimento</string>
+    <string name="salvar">Salvar</string>
 </resources>

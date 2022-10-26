@@ -6,16 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:id="@+id/idmsg"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/idFornecedor"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:onClick="next"
-        android:text="Olá sou a Primeira Tela"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
+        android:height="40pt"
+        android:ellipsize="middle"
+        android:onClick="segundaTela"
+        android:scrollbarSize="8pt"
+        android:text="@string/fornecedor"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/idProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:height="40pt"
+        android:ellipsize="middle"
+        android:onClick="segundaTela"
+        android:scrollbarSize="8pt"
+        android:text="@string/produto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCliente" />
+
+    <Button
+        android:id="@+id/idSair"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:height="40pt"
+        android:ellipsize="middle"
+        android:onClick="sair"
+        android:scrollbarSize="8pt"
+        android:text="@string/sair"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProduto" />
+
+    <Button
+        android:id="@+id/idCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:height="40pt"
+        android:ellipsize="middle"
+        android:onClick="segundaTela"
+        android:scrollbarSize="8pt"
+        android:text="@string/cliente"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idFornecedor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
